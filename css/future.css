@@ -1,0 +1,138 @@
+/* General body styling */
+body {
+  background-color: #FFF8DC; /* Sets the background color to Cornsilk */
+  font-family: "Reross Quadratic", Arial, sans-serif; /* Specifies the primary and fallback font families */
+  text-align: center; /* Aligns text to the center of the container */
+  transform: scale(1.0115); /* Slightly scales up the size of the webpage */
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #ffffff; /* Sets the background color to white */
+  padding: 1em 0; /* Adds uniform padding to the top and bottom */
+  margin-bottom: 3em; /* Creates space below the navigation bar */
+}
+
+/* Styling for first-level headings (h1) */
+h1 {
+  color: #000000; /* Sets the text color to black */
+  font-size: 100px; /* Sets the font size to 100 pixels */
+  margin-top: -0.1em; /* Adjusts the top margin to bring headings closer to the content above */
+  margin-bottom: 1em; /* Adds space below the heading */
+}
+
+/* Styling for second-level headings (h2) */
+h2 {
+  color: #055C9D; /* Sets the text color to a dark blue */
+  font-size: 40px; /* Sets the font size to 40 pixels */
+}
+
+/* Paragraph text styling */
+p {
+  color: #000000; /* Sets the text color to black */
+  font-size: 28px; /* Increases the font size for better readability */
+}
+
+/* Footer section styling */
+footer {
+  background-color: #aec6cf; /* Sets the background color to a light blue */
+  padding: 1em 0; /* Adds uniform padding to the top and bottom */
+}
+
+/* Image styling for portraits */
+img.portrait {
+  margin-top: -3em; /* Adjusts the top margin to overlap with the element above */
+  margin-bottom: 3em; /* Adds space below the image */
+  border-radius: 50%; /* Rounds the image to a circle shape */
+}
+
+/* Anchor tag (link) styling */
+a {
+  color: #ffffff; /* Sets the text color to white */
+  text-decoration: none; /* Removes the underline from links */
+  font-size: 48pt; /* Sets the font size to 48 points */
+  margin: 50px; /* Adds space around the links */
+  text-align: center; /* Aligns the link text to the center */
+}
+
+/* Container styling for buttons */
+.button-container {
+  text-align: center; /* Aligns the contained elements to the center */
+  margin-top: 20px; /* Adds space above the button container */
+}
+
+/* Styling for previous and next navigation buttons */
+.prev-button,
+.next-button {
+  background-color: #FF6961; /* Sets the background color to a soft red */
+  color: #ffffff; /* Sets the text color to white */
+  padding: 20px 40px; /* Adds padding around the text */
+  border: none; /* Removes the border from the buttons */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  font-family: "Reross Quadratic", Arial, sans-serif; /* Specifies the primary and fallback font families */
+  font-size: 23.5pt; /* Sets the font size to 23.5 points */
+}
+
+/* Additional styling for the next button */
+.next-button {
+  background-color: #FDFD96; /* Sets the background color to a soft yellow */
+  color: #000000; /* Sets the text color to black */
+}
+
+/* Gallery container styling */
+.gallery {
+  display: flex; /* Enables flexible box layout */
+  justify-content: center; /* Centers items along the main axis */
+  align-items: center; /* Centers items along the cross axis */
+  height: 400px; /* Sets a fixed height for the gallery */
+  margin-bottom: 20px; /* Adds space below the gallery */
+  perspective: 1200px; /* Sets the perspective for 3D transforms */
+}
+
+/* Styling for images within the gallery */
+.gallery img {
+  max-width: 100%; /* Ensures the image is not wider than its container */
+  max-height: 100%; /* Ensures the image is not taller than its container */
+  position: absolute; /* Positions the image absolutely within its container */
+  opacity: 0; /* Starts with the image fully transparent */
+  width: 100%; /* Sets the image width to fill its container */
+  height: 100%; /* Sets the image height to fill its container */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+  transition: opacity 1s, transform 1s; /* Animates the opacity and transform properties */
+}
+
+/* Styling for the active class on gallery images */
+.gallery img.active {
+  opacity: 1; /* Makes the image fully visible */
+}
+
+/* Caption text styling */
+.caption {
+  color: #000000; /* Sets the text color to black */
+  font-size: 40px; /* Sets the font size to 40 pixels */
+}
+
+/* Animation keyframes for fading out elements */
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Starts with the element fully visible */
+    transform: scaleX(1); /* Starts with the element at its original size */
+  }
+  100% {
+    opacity: 0; /* Ends with the element fully transparent */
+    transform: scaleX(0); /* Ends with the element having no width */
+  }
+}
+
+/* Animation keyframes for fading in elements */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Starts with the element fully transparent */
+    transform: scaleX(0); /* Starts with the element having no width */
+  }
+  100% {
+    opacity: 1; /* Ends with the element fully visible */
+    transform: scaleX(1); /* Ends with the element at its original size */
+  }
+}
+
