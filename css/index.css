@@ -1,7 +1,7 @@
 /* General body styling */
 body {
   background-color: #FFF8DC; /* Sets the background color to Cornsilk */
-  font-family: "Reross Quadratic", Arial, sans-serif; /* Specifies the primary and fallback font families */
+  font-family: "reross-quadratic", Arial, sans-serif; /* Specifies the primary and fallback font families */
   text-align: center; /* Aligns text to the center of the container */
   transform: scale(1.0115); /* Slightly scales up the size of the webpage */
 }
