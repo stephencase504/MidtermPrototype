@@ -69,7 +69,7 @@ a {
   padding: 20px 40px; /* Adds padding around the text */
   border: none; /* Removes the border from the buttons */
   cursor: pointer; /* Changes the cursor to a pointer on hover */
-  font-family: "Reross Quadratic", Arial, sans-serif; /* Specifies the primary and fallback font families */
+  font-family: "reross-quadratic", Arial, sans-serif; /* Specifies the primary and fallback font families */
   font-size: 23.5pt; /* Sets the font size to 23.5 points */
 }
 
